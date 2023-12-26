@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 0, 0.4);
+}
+
+#input {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 20px auto;
+  min-width: 300px;
+}
+
+.titlebar {
+  z-index: 1;
+  box-shadow: 0 0 10px 2px rgb(100, 100, 100);
+  display: flex;
+  justify-content: space-between;
+  border: 1.5px solid black;
+  padding: 7px;
+  background-color: rgb(255, 127, 0);
+}
+
+.title h3 {
+  font-family: 'Russo One', 'sans-serif';
+  font-weight: 300;
+  margin: 0;
+  display: inline-block;
+}
+
+.title i {
+  margin-right: 5px;
+  font-size: 19px;
+  vertical-align: bottom;
+}
+
+#editor {
+  box-shadow: 0 0 10px 2px rgb(100, 100, 100);
+  border: 1px solid black;
+  border-top: 0;
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+textarea {
+  outline: none;
+}
+
+button {
+  background-color: rgb(255, 127, 0);
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  color: cyan;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 20px auto;
+  min-width: 300px;
+}
+
+#preview {
+  box-shadow: 0 0 10px 2px rgb(100, 100, 100);
+  background-color: white;
+  border: 1px solid black;
+  border-top: 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 0, 0.1);
+  font-family: 'Poppins', sans-serif; 
+  font-size: 16px;
+}
+
+#preview img {
+  max-width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#preview pre, #preview code {
+  background-color: white;
+  overflow: auto;
+}
+
+#preview table, td, th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#preview blockquote {
+  overflow: auto;
+  border-left: 3px solid black;
+  padding-left: 5px;
+  background-color: white;
+}
+
+#preview h1, h2, h3 {
+  text-decoration: underline;
+}
+
